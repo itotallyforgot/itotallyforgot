@@ -14,11 +14,11 @@ Engineer who leads. Transitioning to leader who engineers.
 
 Enterprise systems at real scale. Platforms processing 10 PB PCAP and 50+ TB NetFlow daily. Asset discovery across 10M devices at 3,600 sites. Engineering velocity from one deploy a week to two a day per engineer. Container orchestration for both defensive and offensive security operations.
 
-Production AI since 2019. Shipped ML-driven security alert triage five years before ChatGPT. Drove agentic GenAI integration for AppSec in 2024.
+Production AI since 2019. Shipped ML-driven security alert triage years before ChatGPT. Drove agentic GenAI integration for AppSec in 2024.
 
 ### Currently shipping
 
-- **vault-retrieval-engine**. Local semantic retrieval over personal markdown vaults. Header-aware chunking. Query routing across LOOKUP / SEMANTIC / MULTI_HOP / HYBRID modes. Vec search plus wikilink graph walks. Citation chains for auditable retrieval. Eval harness with latency SLOs. No external API. Public release pending.
+- **vault-retrieval-engine**. Local semantic retrieval over personal markdown vaults. Header-aware chunking. Query routing across LOOKUP / SEMANTIC / MULTI_HOP / HYBRID modes. Vec search plus wikilink graph walks. Citation chains for auditable retrieval. Eval harness with latency SLOs. No external API. Public, v0.1.0 shipped.
 - **framework-bench**. Comparative benchmark of 14+ AI coding frameworks. Human five-axis review plus nine automated judges including an honesty audit that catches AI tools that lie about themselves: fake-math token estimates, ignored privacy filters, schema drift. Publication consent pending.
 
 ### Outside work
