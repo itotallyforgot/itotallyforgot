@@ -1,0 +1,32 @@
+name: security
+
+# Thin caller for the central reusable security baseline
+# (harden-runner, gitleaks, zizmor, dependency-review). Emits the frozen
+# aggregate check `security-passed`.
+#
+# security-events: write is required because GitHub validates nested-job
+# permissions at startup; the reusable's zizmor job declares it.
+#
+# No `secrets: inherit`: the built-in GITHUB_TOKEN is automatically available
+# inside reusable workflows. Inheriting all secrets would be needlessly broad.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: security-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  baseline:
+    permissions:
+      contents: read
+      pull-requests: read
+      security-events: write
+    uses: itotallyforgot/.github/.github/workflows/security-baseline.yml@7c6b49e59a951f5f001b0cb1421412ec4387c1cf
